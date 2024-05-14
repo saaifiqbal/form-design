@@ -112,7 +112,7 @@ function Filters({ onSearch, flights }) {
         </div>
       </div>
       <hr className="h-px  bg-[#9FA7FA] border-0 dark:bg-gray-700" />
-      {flights && <p className="text-xs">Data parsed Successfully</p>}
+      {flights ? <p className="text-xs">Data parsed Successfully</p> : flights === undefined && <p className="text-xs">Data parsed Successfully</p> }
     </form>
   );
 }
